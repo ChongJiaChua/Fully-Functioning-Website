@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <link rel="stylesheet" href="Testingstyle.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Chong Jia Chua">
+        <title>Staff Student Liaison Committee</title>
+    </head>
+
+    <body>
+        <div class="navigation">
+            <nav role="navigation">
+                <input type="checkbox" id="menu">
+                <label for="menu" class="icon" aria-label="icon">
+                    <img src="menu.png" alt="Header Menu Icon" aria-label="Top Menu Icon">
+                </label>
+                <a href="index.html" class="link" role="link">SSLC</a>
+                <a href="index.html" role="link" aria-label="Home Page">
+                    <img src="logo.png" class="logo" alt="Page Logo" aria-label="Website Logo">
+                </a>
+                <div class="next" role="menu">                     
+                    <ul role="menu">
+                        <li role="menuitem"><a href="purpose.html">Purpose</a></li>
+                        <li role="menuitem"><a href="membership.html">Membership</a></li>
+                        <li role="menuitem"><a href="meetings&papers.html">Meetings &amp; Paper</a></li>
+                        <li role="menuitem"><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <header role="banner">
+            <div class="title">
+            <h1>Testing</h1>
+            </div>
+        </header>
+
+        <main class="main">
+            <section class="optimisation">
+                <div class="head">
+                    <h2>Optimisation</h2>
+                </div>
+                <div class="content">
+                    <p>After using the Performance Insight in Developer Tools in Chrome, there were some tasks that were considered as long tasks and some pictures that took longer to load than the rest. Some of the fixes for these issues are simplifying my code so that the browser is able to render 
+                        code faster. As for images, I should use the correct image formats such as .png and .jpeg. </p>
+                </div>
+            </section>
+            <section class="debugging">
+                <div class="head">
+                    <h2>Debugging</h2>
+                </div>
+                <div class="content">
+                    <p>By using the html and css validators, it was able to point out many errors in my code such as missing closing tags, errors in my element subtree, stray tags and missing semicolons in css. Some problems were solved as I had overlooked these small mistakes.</p>
+                    <img src="Validator before.png">
+                    <img src="Validator After.png">
+                </div>
+            </section>
+            <section class="browser">
+                <div class="head">
+                    <h2>Browser testing</h2>
+                </div>
+                <div class="content">
+                    <p>There were some differences between when viewing my website in the Responsive Design Mode in Chrome and FireFox. One difference was that the page in chrome has a lot of white space towards the end of the page but there was none in FireFox. Another difference was that the display my Membership Page was not the in Chrome and in FireFox.
+                        FireFox is also able to activte the :hover pseudoclass even in Responsive Design Mode while Chrom was unable to.    
+                    </p>
+                    <img src="Chrome version.png">
+                    <img src="FireFox version.png">
+                    <img src="Chrome version2.png">
+                    <img src="FireFox version2.png">
+                </div>
+            </section>
+            <section class="accessibility">
+                <div class="head">
+                    <h2>Accessibility</h2>
+                </div>
+                <div class="content">
+                    <p>Home Page</p>
+                    <img src="WAVE home page (before).png">
+                    <img src="WAVE home page (after).png">
+                    <p>Purpose Page</p>
+                    <img src="WAVE purpose page (before).png">
+                    <img src="WAVE Purpose page (after) .png">
+                    <p>Membership Page</p>
+                    <img src="WAVE members page (before).png">
+                    <img src="WAVE Memebers page (after).png">
+                    <p>Contact Page</p>
+                    <img src="WAVE contact page (before).png">
+                    <img src="WAVE contact page (after).png">
+                    <p>Meetings Page</p>
+                    <img src="WAVE meetings (after).png">
+                    <p>WAVE was able to point out many contrast errors and missing alt tags for picture which helped to improve the accessibility of the page. It pointed out at elements that had bad contrast with the background which would have been difficult for people with visual impairment to read. Its output was very clear as it was able to identify the elements that 
+                        had a problem specifically, allowing me to change it immediately without spending much time looking for the element. The after screenshots show that the pages had met all the accessibility specifications. Its output was also clear in explaning the problem that had to be fixed which made it easier to use. 
+                    </p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>14/11/2023 &copy;Chong Jia Chua</p>
+                <nav role="navigation">
+                    <input type="checkbox" id="menu-bottom">
+                    <label for="menu-bottom" class="button" aria-label="icon">
+                        <img src="menu.svg" alt="Footer Menu Icon" aria-label="Lower Menu Icon">
+                    </label>
+                    <div class="down">                    
+                        <ul role="menu">
+                            <li role="menuitem"><a href="Accessibility.html" aria-label="Accessibility Page">Accessibility</a></li>
+                            <li role="menuitem"><a href="Legal&security.html" aria-label="Legal & Security Page">Legal &amp; Security</a></li>
+                            <li role="menuitem"><a href="Design.html" aria-label="Design Page">Design</a></li>
+                            <li role="menuitem"><a href="Testing.html" aria-label="Testing Page">Testing</a></li>
+                        </ul>
+                    </div>
+                </nav>
+        </footer>
+    </body>
+</html>

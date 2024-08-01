@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <link rel="stylesheet" href="Accessibilitystyle.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Chong Jia Chua">
+        <title>Staff Student Liaison Committee</title>
+    </head>
+
+    <body>
+        <div class="navigation">
+            <nav role="navigation">
+                <input type="checkbox" id="menu">
+                <label for="menu" class="icon" aria-label="icon">
+                    <img src="menu.png" alt="Header Menu Icon" aria-label="Top Menu Icon">
+                </label>
+                <a href="index.html" class="link" role="link">SSLC</a>
+                <a href="index.html" role="link" aria-label="Home Page">
+                    <img src="logo.png" class="logo" alt="Page Logo" aria-label="Website Logo">
+                </a>
+                <div class="next" role="menu">                     
+                    <ul role="menu">
+                        <li role="menuitem"><a href="purpose.html">Purpose</a></li>
+                        <li role="menuitem"><a href="membership.html">Membership</a></li>
+                        <li role="menuitem"><a href="meetings&papers.html">Meetings &amp; Paper</a></li>
+                        <li role="menuitem"><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <header role="banner">
+            <div class="title">
+            <h1>Accessibility</h1>
+            </div>
+        </header>
+
+        <main class="main">
+            <section class="considerations">
+                <div class="head">
+                    <h2>Accessibility considerations</h2>
+                </div>
+                <div class="content">
+                    <p>1)Special characters such as the &amp; character may not load for some devices. The &amp;amp; was used instead to ensure all devices can load the character.<br>2)Images were given alt to ensure that in the event that it is not able to be displayed, a short description of the picture is given. <br>3) Use of ARIA roles and labels to make clear the role of different elements in the page. <a href="https://www.w3schools.com/accessibility/accessibility_labels.php">Link</a><br>5) Changing the color of visited links to a different color to remind users.<br>6) Use a variety of semantic tags to simplify the structure of the code. <a href="https://www.w3schools.com/html/html5_semantic_elements.asp">Link</a><br>7) Adding alternative fonts to the font-family tag in the case where the font does not display;<br>8) Use of light cool pastel colors instead of sharp colors so that the page content is more readable.<br>9) Elements that allows interaction changes its font-sizes, color, font-weight or position when the focus is on it to improve visible focus style.<br></p>
+                    <br>
+                    <p>5)Before</p>
+                    <img src="visited link (before).png" style="width:500px;">
+                    <p>After</p>
+                    <img src="visited link (after).png" style="width:500px;">
+                    <p>8)Light colors</p>
+                    <img src="light colors.png" style="width:350px;">
+                </div>
+            </section>
+            <section class="issues">
+                <div class="head">
+                    <h2>Issues</h2>
+                </div>
+                <div class="content">
+                    <p>Visual impairment can be solved by screen reader such as <a href="https://www.freedomscientific.com/products/software/jaws/">JAWS</a> and <a href="https://www.nvaccess.org/download/">NVDA.</a></p>
+                    <p>Errors and contrast issues can be identified using the <a href="https://wave.webaim.org/">WAVE</a> tool and the <a href="https://webaim.org/resources/contrastchecker/">WebAIM</a> contrast checker.</p>
+                </div>
+            </section>
+            <section class="assessment">
+                <div class="head">
+                    <h2>Assessment approach</h2>
+                </div>
+                <div class="content">
+                    <p>Accessibility assessment conducted by the following approaches:</p>
+                    <ul>
+                        <li>Self-Evaluation</li>
+                        <li>WAVE was used to detect errors</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="credit">
+                <div class="head">
+                    <h2>Date</h2>
+                </div>
+                <div class="content">
+                    <p>This statement was created on 13 November 2023 using the <a href="https://www.w3.org/WAI/planning/statements/">W3C Accessibility Statement Generator Tool</a></p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>14/11/2023 &copy;Chong Jia Chua</p>
+                <nav role="navigation">
+                    <input type="checkbox" id="menu-bottom">
+                    <label for="menu-bottom" class="button" aria-label="icon">
+                        <img src="menu.svg" alt="Footer Menu Icon" aria-label="Lower Menu Icon">
+                    </label>
+                    <div class="down">                    
+                        <ul role="menu">
+                            <li role="menuitem"><a href="Accessibility.html" aria-label="Accessibility Page">Accessibility</a></li>
+                            <li role="menuitem"><a href="Legal&security.html" aria-label="Legal & Security Page">Legal &amp; Security</a></li>
+                            <li role="menuitem"><a href="Design.html" aria-label="Design Page">Design</a></li>
+                            <li role="menuitem"><a href="Testing.html" aria-label="Testing Page">Testing</a></li>
+                        </ul>
+                    </div>
+                </nav>
+        </footer>
+    </body>
+</html>

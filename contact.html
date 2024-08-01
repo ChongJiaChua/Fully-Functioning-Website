@@ -1,0 +1,111 @@
+<!doctype html> 
+<html lang="en">
+  
+    <head>
+        <link rel="stylesheet" href="contactstyle.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Chong Jia Chua">
+        <title>Contact Page</title>
+    </head>
+    <body>
+        <header>
+            <div class="title">
+            <h1>Contacts</h1>
+            </div>
+        </header>
+
+        <div class="navigation">
+            <nav role="navigation">
+                <input type="checkbox" id="menu">
+                <label for="menu" class="icon" aria-label="icon">
+                    <img src="menu.png" alt="Header Menu Icon" aria-label="Top Menu Icon">
+                </label>
+                <a href="index.html" class="link" role="link">SSLC</a>
+                <a href="index.html" role="link" aria-label="Home Page">
+                    <img src="logo.png" class="logo" alt="Page Logo" aria-label="Website Logo">
+                </a>
+                <div class="next" role="menu">                     
+                    <ul role="menu">
+                        <li role="menuitem"><a href="purpose.html">Purpose</a></li>
+                        <li role="menuitem"><a href="membership.html">Membership</a></li>
+                        <li role="menuitem"><a href="meetings&papers.html">Meetings &amp; Paper</a></li>
+                        <li role="menuitem"><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        
+        <main class="info">
+            <section class="contact email">
+                <h1>Get in touch</h1>
+                <div class="block">
+                    <div>
+                        <span><img src="email icon.svg" alt="Email Icon" aria-label="Email Icon"></span>
+                        <h3><a href="mailto:com-teaching@sheffield.ac.uk" >com-teaching@sheffield.ac.uk</h3></a>
+                    </div>
+                    <address>
+                        <div>
+                            <span><img src="location icon.svg" alt="Location Icon" aria-lable="Location Icon"></span>
+                            <p>
+                                Regent Court,
+                                211 Portobello<br>
+                                Sheffield
+                                S1 4DP
+                                UK 
+                            </p>
+                        </div>
+                    </address>
+                </div>
+            </section>    
+
+            <section class = "contact form">
+                <h1>Feedback Form</h1>    
+                <p> Get in touch with us by providing us with your comments. Type in your email, the name of the committee member or the year group that you wish to comment on in the following form. Your comments your help us to imporve as a team and allow us to provide support to any areas that you are unsatisfied with. Your feedback will not be shared outside of the SSLC.</p><br>
+                    <form action="mailto:cjchua1@sheffield.ac.uk?subject=Test Email" enctype="text/plain" method="post" onsubmit="alert('Email should open up by now.')"><!--End goal of form is too send details to email. A pop up will appear to warn that email will open.-->
+                        <div class = "inputbox">
+                            <div class="short">
+                                <div class="input">
+                                    <input type="text" required aria-label="User Email Address">
+                                    <span>Email</span>
+                                </div>
+                                <div class="input">
+                                    <input type="text" required aria-label="Committee Member or Year Group">
+                                    <span>Committee Member or Year Group</span>
+                                </div>
+                            </div>
+                            <div class="long">
+                                <div class="input">
+                                    <textarea required aria-label="Comments Box"></textarea>
+                                    <span>Type your comments here</span>
+                                </div>
+                            </div>
+                            <div class="long">
+                                <input type="submit" value="Submit">
+                                <input type="reset" value="Reset">
+                            </div>
+                        </div>
+                    </form>
+            </section>
+        </main>
+
+        <footer>
+            <p>14/11/2023 &copy;Chong Jia Chua</p>
+                <nav role="navigation">
+                    <input type="checkbox" id="menu-bottom">
+                    <label for="menu-bottom" class="button" aria-label="icon">
+                        <img src="menu.svg" alt="Footer Menu Icon" aria-label="Lower Menu Icon">
+                    </label>
+                    <div class="down">                    
+                        <ul role="menu">
+                            <li role="menuitem"><a href="Accessibility.html" aria-label="Accessibility Page">Accessibility</a></li>
+                            <li role="menuitem"><a href="Legal&security.html" aria-label="Legal & Security Page">Legal &amp; Security</a></li>
+                            <li role="menuitem"><a href="Design.html" aria-label="Design Page">Design</a></li>
+                            <li role="menuitem"><a href="Testing.html" aria-label="Testing Page">Testing</a></li>
+                        </ul>
+                    </div>
+                </nav>
+        </footer>
+
+    </body>
+</html>    

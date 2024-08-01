@@ -1,0 +1,448 @@
+
+/*declaring font*/
+@font-face {
+    font-family: "Poppins-ExtraLight";
+    src: url("Poppins/Poppins-ExtraLight.ttf");
+  }
+
+@font-face{
+    font-family: "Poppins-SemiBold";
+    src: url("Poppins/Poppins-SemiBold.ttf")
+}
+
+*{
+    margin:0;
+    padding:0;/*all elements starts off without padding and margin*/
+}
+
+body {
+    font-family: "Poppins-ExtraLight", Helvetica, sans-serif;
+    background: url('student\ union.jpg');
+    background-size: cover  ;
+    margin: 0;
+    color: #FFF;
+    background-attachment: fixed;
+    animation-name: fadeIn;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards; /*animation when loading the page*/
+    opacity: 0;/*before animation page is hidden*/
+    
+}
+
+.icon img, .button img {
+    width:30px;
+    height:auto;
+    float:right;
+    line-height: 80px;
+    margin:20px 40px auto auto;
+    cursor: pointer;
+    display:none; /*hidding the menu icon when in noraml width*/
+}
+
+.button img{
+    text-align:center;
+    justify-content: center;
+    align-items: center;
+    margin-left:720px;
+    background-color:#FFFFFF;
+    padding:20px;
+    border-radius:50%;
+}
+
+#menu{
+    display:none;/*hidding the small box that comes with the input*/
+}
+
+#menu-bottom{
+    display:none;/*hidding the small box that comes with the input*/
+}
+
+header {
+    color: #fff;
+    text-align: center;
+    font-size: 36px;
+    bottom:0;
+    margin:auto;
+    padding:auto;
+}
+
+header h1 {
+    font-size: 60px;
+    color: #FFF;
+    text-align: center;
+    position:relative;
+    padding-top:550px;
+    font-family:"Poppins-SemiBold", Helvetica, sans-serif;
+    font-weight:bold;
+    margin:auto;
+    padding-bottom:0;
+}
+
+h3{
+    position:relative;
+    font-size:40px;
+    color:#FFF;
+    
+}
+
+nav {
+    text-align: center;
+    margin-top:0;
+    position: fixed;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+nav a {
+    text-decoration: none;
+    color: #FFFFFF;
+    padding-top:0;
+    margin: 18px;
+    display: inline-block;
+    font-weight:lighter;
+    
+}
+
+.navigation{
+    position: fixed;
+    width: 100%;
+    top:0;
+    z-index:9999;/*high z-index so it will appear above all other elements*/
+    margin:0px;
+
+}
+
+.logo{
+    position:fixed;
+    height:auto;
+    float:left;
+    width:40px;
+    left:40px;
+    
+}
+
+.link{
+    text-decoration: none;
+    color: #FFFFFF;
+    padding-left:70px;
+    text-align:center;
+    float:left;
+    padding-top: 7px;
+    font-weight: bold;
+    font-size:25px;
+  
+}
+
+.next ul{
+    margin-top:-32px;
+    padding-right:170px;
+}
+
+.next ul li, .down ul li{
+    
+    display: inline-block;
+    line-height: 30px;
+    margin: 0 5px;
+      
+}
+
+nav a:hover{
+    color:#d3d3d3;/*indicates hovering*/
+}
+
+.down ul li{
+    line-height: 20px;
+    margin: 0 90px;
+}
+
+.down ul{
+
+    margin-right:100px;
+    margin-left:auto;
+}
+
+footer {
+    color: #ffffff;
+    text-align: center;
+    padding: 0;
+    bottom:0;
+}
+
+footer nav {
+    display: flex;
+    justify-content: space-around;
+    bottom:0;
+}
+
+footer a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+/*document content*/
+.main{
+    display:grid;
+    grid-template-columns: auto;
+    grid-template-rows: .5fr .5fr;
+    grid-template-areas: "welcome"
+                         "work";/*2 grid rows*/
+    grid-gap:40px;
+    background-color:#fff;
+    margin-top:190px;
+    padding-bottom:0;
+}
+
+.welcome{
+    grid-area:welcome;/*specify the grid content*/
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "head description";/*2 grid columns*/
+    color:#000;
+    padding-bottom:0;
+}
+
+.welcome span, .work span{
+    color:red;
+}
+
+.welcome .head{
+    margin:50px auto 0 auto;
+    padding-bottom:0;
+}
+
+.welcome .head h1, .work .head h1{
+    font-size:50px;
+    font-family:"Poppins-SemiBold";
+    padding-bottom:0;
+}
+
+.welcome .description{
+    margin:50px 250px 0 0px;
+    padding-bottom:0;
+}
+
+.welcome .description a{
+    text-decoration:none;/*removes the existing link underline*/
+}
+
+.welcome .description a:hover{
+    color:#AA336A;
+}
+
+.head{
+    grid-area:head;
+}
+
+.description{
+    grid-area:description;
+}
+
+.work{
+    grid-area:work;
+    display:grid;
+    grid-template-rows: 0.7fr 0.5fr;
+    grid-template-areas: "head" 
+                         "description";
+    color:#333;
+    margin-top:0;
+}
+
+.work .head{
+    margin:50px auto 0 240px;
+}
+
+.work .description table{
+    width: 100%; 
+    border-collapse:separate;
+    height:100%;
+}
+
+#first, #second, #third{
+    display:block;/*take up full width parent container*/
+    width:100%;
+    height:auto;
+    max-width: 100%; 
+    max-height: 100%;
+}
+
+#third{
+    height:auto;
+}
+
+table td{
+    padding:10px;
+}
+
+@keyframes fadeIn {/*specifying the animation*/
+    from{
+      opacity: 0; 
+    }
+    to{
+      opacity: 1; 
+    }
+}
+
+@media only screen and (max-width:902px){
+
+    body{
+        width:100%;
+    }
+
+    #menu:checked ~ .next{
+        display:contents;/*reveal the navigation bar*/
+    }
+
+    #menu-bottom:checked ~ .down{
+        display:contents;
+    }
+
+    .next{
+        display:none;
+    }
+
+    .next ul{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        top:100px;
+        text-align: center;
+        padding-top:auto;
+        
+    }
+
+    .down{
+        display:none;
+    }
+
+    .down ul{
+        position:relative;
+        height:auto;
+        margin-top:30px;
+        width:100%;
+    }
+
+    .next ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 40px;
+    }
+
+    .down ul li{
+        display: block;
+        margin: 20px 0;
+        line-height: 15px;
+        white-space:nowrap;
+    }
+
+    .next ul li a, .down ul li a{
+        font-size: 30px;
+    }
+
+    .next ul li a:hover{
+        background: none;
+        color: #AA336A;
+    }
+
+    .down ul li a:hover{
+        background: none;
+        color: #AA336A;
+    }
+
+    .icon img{
+        padding-top:5px;
+        display:block;
+        width:30px;
+    }
+
+    .button img{
+        position:relative;
+        display:block;
+        margin:auto;
+    }
+
+    .welcome{
+        grid-area:welcome;
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-rows:auto;
+        grid-template-areas: "head" 
+                             "description";
+        width:100vw;/*equivalent to the screen width*/
+    }
+
+    .main{
+        width:100%;
+        overflow:hidden;/*hide everything that extends out the screen width*/
+        
+    }
+    
+    table td {
+        display: block;
+        width: 100vw;
+        padding:0;
+        padding-top:10px;
+    }
+
+    .work .head{
+        margin:50px auto 0 auto;
+    }
+
+    #first, #second, #third{
+        display:block;
+        width:100vw;
+        height:auto;
+    }
+
+    .work{
+        grid-area:work;
+        display:grid;
+        grid-template-rows: auto;
+        grid-template-areas: "head" 
+                             "description";/*change from column to rows*/
+        color:#333;
+        margin-top:0;
+    }
+
+    .welcome .description{
+        margin:50px 40px 0 40px;
+        padding-bottom:0;
+        
+    }
+
+    .work .head{
+        margin:50px auto 70px auto;
+    }
+}
+
+
+@media only screen and (min-width:903px) and (max-width:1304px){
+
+    #menu-bottom:checked ~ .down{
+        display:contents;
+    }
+
+    .down{
+        display:none;
+    }
+
+    .down ul{
+        position:relative;
+        height:auto;
+        margin-top:30px;
+        width:100%;
+    }
+
+    .down ul li a:hover{
+        background: none;
+        color: #AA336A;
+    }
+
+    .button img{
+        position:relative;
+        display:block;
+        margin:auto;
+    }
+}

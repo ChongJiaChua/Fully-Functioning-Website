@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+
+    <link rel="stylesheet" href="Designstyle.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Chong Jia Chua">
+        <title>Staff Student Liaison Committee</title>
+    </head>
+
+    <body>
+        <div class="navigation">
+            <nav role="navigation">
+                <input type="checkbox" id="menu">
+                <label for="menu" class="icon" aria-label="icon">
+                    <img src="menu.png" alt="Header Menu Icon" aria-label="Top Menu Icon">
+                </label>
+                <a href="index.html" class="link" role="link">SSLC</a>
+                <a href="index.html" role="link" aria-label="Home Page">
+                    <img src="logo.png" class="logo" alt="Page Logo" aria-label="Website Logo">
+                </a>
+                <div class="next" role="menu">                     
+                    <ul role="menu">
+                        <li role="menuitem"><a href="purpose.html">Purpose</a></li>
+                        <li role="menuitem"><a href="membership.html">Membership</a></li>
+                        <li role="menuitem"><a href="meetings&papers.html">Meetings &amp; Paper</a></li>
+                        <li role="menuitem"><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <header role="banner">
+            <div class="title">
+            <h1>Design</h1>
+            </div>
+        </header>
+
+        <main class="main">
+            <section class="intro">
+                <div class="head">
+                    <h2>Introduction</h2>
+                </div>
+                <div class="content">
+                    <p>The main idea for the design of this website is aiming to create a calm ambiance that allows people to feel welcome when they open up this website. The choice of cool pastel colour contributes to the design goal as it sets a peaceful tone.
+                        One of the aims of using a variety of transitions and animations is to make the page feel more interactive and stand out from other normal webpages. Since the targetted audiences are mainly students and staff, it would be better that the website
+                        makes them feel welcomed. </p>
+                </div>
+            </section>
+            <section class="sitemap">
+                <div class="head">
+                    <h2>Site map</h2>
+                </div>
+                <div class="content">
+                    <p>The home page is connected to the Purpose, Meeting & Papers, Membership and Contact pages.From there, there are different catagories under each page such as forms, quiz, lists and more.  </p>
+                    <img src="Site Map.png" alt="sitemap">
+                </div>
+            </section>
+            <section class="mockup">
+                <div class="head">
+                    <h2>Design mock-ups</h2>
+                </div>
+                <div class="content">
+                    <p>Home Page</p>
+                    <img src="Home page Mock up.png">
+                    <p>Purpose Page</p>
+                    <img src="Purpose Mock up.png">
+                    <p>Membership</p>
+                    <img src="Membership Mock up.png">
+                    <p>Meeting &amp; Papers</p>
+                    <img src="Meetings & Papers Mock up.png">
+                    <p>Contact</p>
+                    <img src="Contact Mock up.png">
+                </div>
+            </section>
+            <article class="reasoning">
+                <div class="head">
+                    <h2>Design reasoning</h2>
+                </div>
+                <div class="content">
+                    <section class="home">
+                        <p>Home Page: For the home page, there are two breakpoints which supports the width of tablets and mobile phones. The breakpoint allows the grid to be in a singular column instead of two which is able to fit smaller screens. The picutres are displayed on top of each other rather than side by side because at smaller widths, the pictures will start to overlap.
+                           Tweakpoints can be use to adjust the alignment of the title inside of the grid box as the width of the screen changes. It may also be used to adjust the padding or margin to ensure that the elements are in the place desired.
+                        </p>
+                    </section>
+                    
+                    <section class="purpose">
+                        <p>Purpose Page: For the purpose page, there is only one breakpoint. Below this breakpoint, the original layout is not maintained as the width of the screen is not able to display all the elements as intended. So, the change made is for the elements that are in the same line to be arranged vertically. Tweakpoints are used to adjust the margin and padding of elements that 
+                            have exceeded the screen width and to modify their positioning. </p>
+                    </section>
+                    <section class="membership">
+                        <p>Membership Page: This page only has one breakpoint and the difference is the value of the left and right margin. By changing the margin, this allows all the content to be displayed without overflowing. Tweakpoint is used to adjust the padding within each grid cell and to adjust the gap between the grid cells. </p>
+                    </section>
+                    <section class="meetings">
+                        <p>Meetings & Papers Page: For this page, there are two breakpoints. For the narrow breakpoint, the margin around the grid is removed so that there is more space to display content when the screen becomes smaller. For the mobile breakpoint, it is similar to the other pages whereby there is only 1 grid column so that each element is able to occupy space up to the screen's width.</p>
+                    </section>
+                    <section class="contact">
+                        <p>Contact Page: This page is similar to the rest of the pages as it uses the same grid concept. Tweakpoint is once again used to change the margin and padding so that all the content in the desired position.</p>
+                    </section>
+                </div>
+            </article>
+            <section class="menu">
+                <div class="head">
+                    <h2>Menu system</h2>
+                </div>
+                <div class="content">
+                    <p>When the screen size shrinks below a certain threshold, the navigation elements will be hidden and a menu icon will appear. The memu icon utilises the checkbox input to reveal the navigation elements when interacted with. This allows for a neat display as the navigation element will not overlap each other as the screen width is too small. For the top navigation bar, the menu icon appears on the far right while for the bottom navigation bar, the menu icon appears in the middle. </p>
+                    <img src="Menu (before).png">
+                    <img src="Menu (after).png">
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>14/11/2023 &copy;Chong Jia Chua</p>
+                <nav role="navigation">
+                    <input type="checkbox" id="menu-bottom">
+                    <label for="menu-bottom" class="button" aria-label="icon">
+                        <img src="menu.svg" alt="Footer Menu Icon" aria-label="Lower Menu Icon">
+                    </label>
+                    <div class="down">                    
+                        <ul role="menu">
+                            <li role="menuitem"><a href="Accessibility.html" aria-label="Accessibility Page">Accessibility</a></li>
+                            <li role="menuitem"><a href="Legal&security.html" aria-label="Legal & Security Page">Legal &amp; Security</a></li>
+                            <li role="menuitem"><a href="Design.html" aria-label="Design Page">Design</a></li>
+                            <li role="menuitem"><a href="Testing.html" aria-label="Testing Page">Testing</a></li>
+                        </ul>
+                    </div>
+                </nav>
+        </footer>
+    </body>
+</html>
